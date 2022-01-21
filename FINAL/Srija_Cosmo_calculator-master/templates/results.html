@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Results</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'result.css' %}">
+    <script src="{ %static 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' }" type="text/javascript"></script>
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Lato:300,400,700' }" rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div>
+    
+    <div class="login-box" >
+        <div id="title">
+            <span>Results</span>
+            </div>
+        <div class="answer"> To the user input redshift Z
+            </div>
+        <div class="result">
+            1.Present age of universe : </div>
+            <div class="answer"> t<sub>0</sub> = {{T0}} Gyears
+        </div>
+        <div class="result">
+            2.Age of the universe : </div>
+            <div class="answer"> t<sub>z</sub> = {{Tz}} Gyears
+        </div>
+        <div class="result">
+            3.Look back time : </div>
+            <div class="answer"> t<sub>LB</sub> = {{del_T}} Gyears
+        </div>
+        <div class="result">
+            4.Comoving radial distance : </div>
+            <div class="answer"> r<sub>c</sub> = {{rc}} Mpc
+        </div>
+        <div class="result">
+            5.Angular diameter distance : </div>
+            <div class="answer"> d<sub>A</sub> = {{da}} Mpc
+        </div>
+        <div class="result">
+            6.Angular scale : </div>
+            <div class="answer"> d<sub>A</sub>/d<sub>&Theta;</sub> = {{ang}} kpc/arcsec
+        </div>
+        <div class="result">
+            7.Luminosity distance : </div>
+            <div class="answer"> d<sub>L</sub> = {{dl}} Mpc
+        </div>
+        <div class="result">
+            8.Temperature of CMB : </div>
+            <div class="answer"> T<sub>z</sub> = {{Tcmb}} K
+        </div>
+        <div><a class="button" href="javascript:history.go(-1)">Back</a></div>
+    </div>
+</div>
+</body>
+</html>
